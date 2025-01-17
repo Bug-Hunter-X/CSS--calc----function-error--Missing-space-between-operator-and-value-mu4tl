@@ -1,0 +1,9 @@
+The solution to the bug is to ensure proper spacing within the `calc()` function.  Here's the corrected code:
+
+```css
+.element {
+  width: calc(100% - 10px); /* Correct: Added space */
+}
+```
+
+By adding a space between the `%` symbol and the `-` operator, and between the `-` operator and `10px`, the `calc()` function will parse the expression correctly, resulting in the intended element width.
