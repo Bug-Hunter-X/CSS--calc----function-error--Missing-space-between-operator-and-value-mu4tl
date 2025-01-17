@@ -1,0 +1,19 @@
+The following CSS code snippet uses the `calc()` function incorrectly, leading to unexpected results:
+
+```css
+.element {
+  width: calc(100% - 10px);
+  /* Incorrect: Missing space between the operator and the value */
+}
+```
+
+The correct syntax requires a space between the operator (`-`) and the numeric value (`10px`):
+
+```css
+.element {
+  width: calc(100% - 10px);
+  /* Correct: Added space between the operator and the value */
+}
+```
+
+Failing to include this space can cause the `calc()` function to parse the expression incorrectly, resulting in unexpected element widths. This is a common oversight but can be easily fixed by paying attention to spacing within the `calc()` function's parentheses.
